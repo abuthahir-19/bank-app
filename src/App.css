@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500&family=Public+Sans:wght@300&display=swap');
+* {
+    font-family: 'Public Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button > button{
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button > button:hover {
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/************* Styles for Reason Section **********/
+
+div.reason-container {
+    position: relative;
+    top: -9rem;;
+}
+div.head-part {
+    height: 10%;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.head-part > h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.head-part > div.descrip {
+    width: 52%;
+    line-height: 1.6rem;
+    opacity: 0.7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.box-section-reason {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/*************End of Styles for Reason Section **********/
+
+
+/************* Styles for BoxSec Section **********/
+
+div.box-container-bank {
+    width: 22.3%;
+    /* height: 300px; */
+    padding: 10px;
+}
+
+div.box-container-bank > p {
+    line-height: 1.6rem;
+    opacity: 0.7;
+}
+
+div.box-container-bank > img {
+    margin-bottom: 15px;
+}
+
+div.box-container-bank > h3 {
+    font-weight: 400;
+    font-size: 1.45rem;
+}
+
+/*************End of Styles for BoxSec Section **********/
+
+
+/*************Start of Styles for Blog Section **********/
+
+div.blogs-details-cont {
+    width: 100%;
+    position: relative;
+    top: -5rem;
+}
+
+div.blog-heading-con {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.blogs-list {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+/*************End of Styles for Blog Section **********/
+
+
+/*************Start of Styles for Footer Section **********/
+
+div.footer-section {
+    width: 100%;
+    background-color: hsl(233, 26%, 24%);
+    height: 30vh;
+    margin-top: 8rem;
+}
+
+div.footer-section > footer.footer {
+    display: flex;
+    /* width: 80%; */
+    margin: 45px;
+}
+
+footer.footer > .right-foot {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.footer > .left-foot {
+    width: 45%;
+    position: relative;
+    top: 2rem;
+    right: 2rem;
+}
+
+footer.footer > .left-foot > .but-copy-rights {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+footer.footer > .left-foot > .but-copy-rights p {
+    color: white;
+    opacity: 0.7;
+}
+
+
+div.social-icons > ul {
+    display: flex;
+    position: relative;
+    top: 6rem;
+}
+
+div.sec1 > img {
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+    cursor: pointer;
+}
+
+ul.social-apps-logo li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+div > ul.links {
+    list-style-type: none;
+    position: relative;
+    top: 3rem;
+}
+
+div > ul.links li {
+    list-style-type: none;
+    line-height: 2rem;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/*************End of Styles for Footer Section **********/
+@media screen and (max-width: 874px) {
+    .button > button {
+        display: none;
+    }
 }

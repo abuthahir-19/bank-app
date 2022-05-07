@@ -1,0 +1,45 @@
+div.mid-portion-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+div.left-part {
+    width: 40%;
+    padding: 6rem 0 0 10rem;
+}
+
+.left-part h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.left-part p {
+    line-height: 1.6rem;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+/* right part stylings */
+
+div.right-part {
+    position: relative;
+    width: 50%;
+}
+
+.right-part img#deskImg {
+    position: absolute;
+    width: 120%;
+    /* height: 60%; */
+    top: -7.8rem;
+    right: -10rem;
+    z-index: -1;
+}
+
+.right-part img#mockImg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
+    top: -6rem;
+    right: -6rem;
+}
